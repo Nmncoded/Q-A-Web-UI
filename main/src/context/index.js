@@ -1,4 +1,4 @@
-import { setStep } from "./actions";
-import { useState, useDispatch, StateProvider } from './context';
+import { setStep, addAnswer, setSubmit } from "./actions";
+import { useStateData, useDispatch, StateProvider } from './context';
 
-export { setStep, useState, useDispatch, StateProvider };
+export { setStep, useStateData, useDispatch, StateProvider, addAnswer, setSubmit };

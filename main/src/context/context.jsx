@@ -4,10 +4,10 @@ import { reducer, initialState } from './reducer';
 const StateContext = React.createContext();
 const DispatchContext = React.createContext();
 
-export function useState() {
+export function useStateData() {
   const context = useContext(StateContext);
   if (context === undefined) {
-    throw new Error('useState must be used within a StateProvider');
+    throw new Error('useStateData must be used within a StateProvider');
   }
 
   return context;

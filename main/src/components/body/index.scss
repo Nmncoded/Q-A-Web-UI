@@ -4,10 +4,55 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 16px;
+    padding: 36px 16px;
     border-radius: 4px;
-    border: 2px solid grey;
+    border: 1px solid rgba(0,0,0,0.7);
     margin: 16px;
     color: pink;
     font-size: 24px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+    .icon {
+        color: aquamarine;
+        font-size: 48px;
+    }
+    
+}
+
+.change-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+    .text {
+        margin: 0 36px;
+    }
+    .left, .right {
+        color: aquamarine;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.question {
+    color: rgba(0,0,0,0.7);
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label {
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+}
+
+.err-msg {
+    color: red;
+    text-align: end;
+    font-size: 16px;
+    margin: 8px 0;
 }
